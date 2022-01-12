@@ -1,0 +1,8 @@
+<h2>New Book</h2>
+<form action="/books" method="post" enctype="multipart/form-data">
+  <%# multipart is from npm multer. It tells the server that the form will
+  receive multipart data which could include a file. The file refers to the book
+  cover as an image. %> <%- include('_form_fields') %>
+  <a href="/books">Cancel</a>
+  <button type="submit">Create</button>
+</form>
